@@ -13,7 +13,7 @@ import def_setting
 
 
 def create_tasks():
-    param_get_token = {"phone": "79537670770", "****": "1212", "type": "search"}
+    param_get_token = {"phone": "79537670770", "code": "****", "type": "search"}
     param_request_token = {"phone": "79537670770", "type": "search"}
     for task in data_wa_notice.tasks:
         requests.post("https://demobk.rentmachina.ru/api/v2/user/request-token", data=param_request_token)
